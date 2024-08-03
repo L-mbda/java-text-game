@@ -1,0 +1,7 @@
+modules = ["java-graalvm22.3"]
+run = "javac platform.java && java platform.java"
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "javac platform.java && java platform.java"]
